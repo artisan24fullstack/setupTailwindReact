@@ -11,6 +11,18 @@
 
 > Configure design system in Tailwind
 https://github.com/rodriguez-gaston/tailwind-design-system
+
+> generator https://tailwind-generator.com/
+
+> Building a “utility-first” design system
+- https://uxdesign.cc/building-utility-first-design-systems-part-1-52ce020630b
+
+> https://tailwindcomponents.com/
+
+
+> Official plugins
+https://tailwindcss.com/docs/plugins#official-plugins
+
 --------------------------------------------------------------
 1) Prerequisites Node.js and npm:
 
@@ -75,3 +87,30 @@ export default function App() {
   )
 }
 ```
+
+8) Official plugins
+- Plugins can be added to your project by installing them via npm, then adding them to your tailwind.config.js file:
+
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ]
+}
+```
+
+
+> npm install -D @tailwindcss/typography
+- https://github.com/tailwindlabs/tailwindcss-typography?tab=readme-ov-file
+- https://tailwindcss-typography.vercel.app/
+- The official Tailwind CSS Typography plugin provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.
+
+> npm install -D @tailwindcss/forms
+- https://github.com/tailwindlabs/tailwindcss-forms
+- https://tailwindcss-forms.vercel.app/
+- A plugin that provides a basic reset for form styles that makes form elements easy to override with utilities.
+
